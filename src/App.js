@@ -78,8 +78,8 @@ function App() {
                 <div>
                   <h3 className='Title'>Meta Platforms, Inc. (META)</h3>
                   <div className='price'>
-                    <p>${closePrice}</p>
-                    <p>close Price :{closeTime}</p>
+                    <p>Price : ${closePrice}</p>
+                    <p>{closeTime}</p>
                     <p>
                       Next update: {`${time % 60}`.padStart(2, 0)}s 
                     </p>
