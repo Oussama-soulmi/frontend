@@ -2,6 +2,8 @@ import React, {useState, useEffect } from 'react'
 import Plot from 'react-plotly.js';
 import { Triangle } from 'react-loader-spinner'
 import './App.css';
+import { config } from './configs.js';
+
 
 function App() {
   const [data, setData] = useState([{}]);
@@ -14,7 +16,7 @@ function App() {
 
 
   const fetchData = (()=>{
-    fetch("/meta").then(
+    fetch(config.SERVER_URI+"/meta").then(
       res => res.json()
     ).then(
       data => {
