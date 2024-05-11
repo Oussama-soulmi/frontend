@@ -1,9 +1,9 @@
 const configs = {
     development: {
-      SERVER_URI: 'localhost:8080',
+      SERVER_URI: 'http://localhost:5000',
     },
     production: {
-      SERVER_URI: 'Railway_URI',
+      SERVER_URI: 'https://local-regine-oussamasouilmi-ccf3a331.koyeb.app',
     },
   };
   
